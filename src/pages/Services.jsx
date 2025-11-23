@@ -664,7 +664,7 @@ const Services = () => {
                 <p className="text-gray-600 mb-4">
                   Contact us to learn how {selectedService.title} can transform your transportation operations.
                 </p>
-                <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105" onClick={()=>navigate('/contact')}>
                   Request Consultation 📞
                 </button>
               </div>

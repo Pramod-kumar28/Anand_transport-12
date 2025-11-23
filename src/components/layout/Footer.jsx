@@ -278,11 +278,11 @@ const Footer = () => {
                         <span className="text-white"> TECHNOLOGY & SAFETY</span>
                       </h2>
                       {/* Mobile View */}
-                      <h2 className="lg:hidden text-sm font-bold leading-tight -pl-2 ">
+                      <h2 className="lg:hidden text-[11px] font-bold leading-tight -pl-2 ">
                         <span className="text-amber-400">ANAND</span> 
-                        <span className="text-white"> TECH & SAFETY</span>
+                        <span className="text-white"> TECHNOLOGY & SAFETY</span>
                       </h2>
-                      <p className="text-amber-200 text-sm italic mt-1">"Dharmo Rakshati Rakshitah"</p>
+                      <p className="text-amber-200 text-xs italic mt-1">"Dharmo Rakshati Rakshitah"</p>
                     </div>
                   </div>
 
