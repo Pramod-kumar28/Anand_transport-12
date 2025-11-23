@@ -46,7 +46,7 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -54,7 +54,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
+  background: #6193e4f0;
   border-radius: 4px;
 }
 
@@ -68,6 +68,12 @@
 }
 
 .navy-blue{
-    background-color: #243164;
+    background-color: #1e3386;
+}
 
+@media (max-width: 768px) {
+  .container {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
 }
