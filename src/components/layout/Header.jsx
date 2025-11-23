@@ -182,8 +182,8 @@ const Header = () => {
   const isActive = (path) => location.pathname === path
 
   return (
-    <header className={`container fixed w-full z-50 transition-all duration-300 bg-white ${isScrolled ? 'shadow-md' : ''}`}>
-      <div className="w-full py-3">
+    <header className={`fixed w-full z-50 transition-all duration-300 bg-white ${isScrolled ? 'shadow-md' : ''}`}>
+      <div className="w-full py-4 container mx-auto">
         <div className="flex justify-between items-center w-full">
           {/* Logo Section - Fixed width */}
           <div className="flex items-center max-w-[75%] flex-shrink">

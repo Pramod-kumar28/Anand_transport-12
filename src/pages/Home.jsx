@@ -1287,7 +1287,7 @@ const Home = () => {
   );
 
   return (
-    <div className="container min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 overflow-hidden">
+    <div className="container mx-auto min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 overflow-hidden">
       {/* Custom Animations */}
       <style jsx>{`
         @keyframes float {
@@ -1321,7 +1321,7 @@ const Home = () => {
       `}</style>
 
       {/* Hero Section with Dashboard Card */}
-      <section className="mt-24 pb-20 px-2 sm:px-2 lg:px-8 relative">
+      <section className="pt-20 pb-20 px-2 sm:px-2 lg:px-8 relative">
         {/* Animated Background Elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-cyan-300 rounded-full opacity-30 animate-float" style={{ animationDelay: '2s' }}></div>

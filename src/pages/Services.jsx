@@ -613,13 +613,13 @@ const Services = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
             <div className={`h-2 bg-gradient-to-r ${getColorClasses(selectedService.color)} rounded-t-2xl`}></div>
-            <div className="p-8">
+            <div className="p-4">
               <div className="flex justify-between items-start mb-6">
                 <div className="flex items-center gap-4">
                   <div className={`p-3 rounded-xl bg-gradient-to-br ${getColorClasses(selectedService.color)} text-white flex items-center justify-center w-12 h-12`}>
                     <span className="text-2xl">{selectedService.emoji}</span>
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-800">{selectedService.title}</h2>
+                  <h2 className="text-2xl font-bold text-gray-800">{selectedService.title}</h2>
                 </div>
                 <button
                   onClick={() => setSelectedService(null)}
@@ -634,7 +634,7 @@ const Services = () => {
               </p>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-                <div className={getLightColorClasses(selectedService.color) + " rounded-xl p-6 border"}>
+                <div className={getLightColorClasses(selectedService.color) + " rounded-xl p-3 border"}>
                   <h3 className="text-xl font-semibold text-gray-800 mb-4">Key Features 📋</h3>
                   <ul className="space-y-3">
                     {selectedService.features.map((feature, index) => (
@@ -659,7 +659,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-6 border border-gray-200">
+              <div className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-3 border border-gray-200">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">Ready to Get Started? 🚀</h3>
                 <p className="text-gray-600 mb-4">
                   Contact us to learn how {selectedService.title} can transform your transportation operations.

@@ -431,7 +431,7 @@ const About = () => {
   ]
 
   return (
-    <div className="overflow-hidden pt-10">
+    <div className="overflow-hidden pt-20">
       {/* Hero Section with enhanced animation */}
       <section className="text-white py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 relative overflow-hidden">
         {/* Animated background elements */}
