@@ -284,7 +284,7 @@ const Header = () => {
             <Link 
               to="/" 
               className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 ${
-                isActive('/contact') 
+                isActive('/') 
                   ? 'text-blue-800 bg-blue-500 bg-opacity-10' 
                   : 'text-gray-700 hover:text-blue-500 hover:bg-gray-100'
               }`}
@@ -295,7 +295,7 @@ const Header = () => {
             <Link 
               to="/about" 
               className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 ${
-                isActive('/contact') 
+                isActive('/about') 
                   ? 'text-blue-800 bg-blue-500 bg-opacity-10' 
                   : 'text-gray-700 hover:text-blue-500 hover:bg-gray-100'
               }`}
@@ -306,7 +306,7 @@ const Header = () => {
             <Link 
               to="/services" 
               className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 ${
-                isActive('/contact') 
+                isActive('/services') 
                   ? 'text-blue-800 bg-blue-500 bg-opacity-10' 
                   : 'text-gray-700 hover:text-blue-500 hover:bg-gray-100'
               }`}
