@@ -1321,7 +1321,7 @@ const Home = () => {
       `}</style>
 
       {/* Hero Section with Dashboard Card */}
-      <section className="pt-20 pb-20 px-2 sm:px-2 lg:px-8 relative">
+      <section className="mt-24 pb-20 px-2 sm:px-2 lg:px-8 relative">
         {/* Animated Background Elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float"></div>
         <div className="absolute top-40 right-20 w-16 h-16 bg-cyan-300 rounded-full opacity-30 animate-float" style={{ animationDelay: '2s' }}></div>
@@ -1588,7 +1588,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 flex items-center justify-center group">
+              <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 flex items-center justify-center group" onClick={()=> navigate('/services')}>
                 <i className="fas fa-rocket mr-3 group-hover:scale-125 transition-transform duration-300"></i>
                 Explore Smart Services
               </button>
@@ -1644,7 +1644,7 @@ const Home = () => {
               for comprehensive protection and passenger satisfaction.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-500 transform hover:-translate-y-2 flex items-center justify-center group">
+              <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-500 transform hover:-translate-y-2 flex items-center justify-center group" onClick={()=>navigate('/contact')}>
                 <i className="fas fa-comments mr-3 group-hover:scale-125 transition-transform duration-300"></i>
                 Schedule a Demo
               </button>

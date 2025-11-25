@@ -561,8 +561,8 @@ const Services = () => {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services 🛠️</h1>
-          <p className="text-xl text-blue-200 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 .fade-in">Our Services 🛠️</h1>
+          <p className="text-xl text-blue-200 max-w-2xl mx-auto .fade-in ">
             Comprehensive safety and mobility solutions designed to transform transportation experiences
           </p>
         </div>
@@ -731,6 +731,98 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Enhanced Animation Styles */}
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes slide-in-left {
+          from {
+            opacity: 0;
+            transform: translateX(-50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        @keyframes slide-in-right {
+          from {
+            opacity: 0;
+            transform: translateX(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        @keyframes scale-in {
+          from {
+            opacity: 0;
+            transform: scale(0.8);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        
+        .fade-in {
+          opacity: 0;
+          animation: fade-in-up 0.8s ease-out forwards;
+        }
+        
+        .slide-in-left {
+          opacity: 0;
+          animation: slide-in-left 0.8s ease-out forwards;
+        }
+        
+        .slide-in-right {
+          opacity: 0;
+          animation: slide-in-right 0.8s ease-out forwards;
+        }
+        
+        .scale-in {
+          opacity: 0;
+          animation: scale-in 0.6s ease-out forwards;
+        }
+        
+        .visible {
+          opacity: 1;
+        }
+        
+        .animation-delay-300 {
+          animation-delay: 0.3s;
+        }
+        
+        .animation-delay-500 {
+          animation-delay: 0.5s;
+        }
+        
+        .animation-delay-2000 {
+          animation-delay: 2s;
+        }
+        
+        /* Hover effects */
+        .group:hover .group-hover\:scale-110 {
+          transform: scale(1.1);
+        }
+        
+        .group:hover .group-hover\:-translate-y-2 {
+          transform: translateY(-0.5rem);
+        }
+      `}</style>
     </div>
   )
 }
