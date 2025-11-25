@@ -63,7 +63,7 @@ const Contact = () => {
           
           {/* Compact CTA */}
           <div className="mt-6 animate-bounce-slow">
-            <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+            <div className="inline-flex items-center space-x-2 px-4 py-2" >
               <span className="text-amber-400">👇</span>
               <span className="text-sm font-medium">Scroll to Get in Touch</span>
             </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                 <div className="w-10 h-10 bg-gradient-to-r from-amber-400 to-amber-600 rounded-lg flex items-center justify-center mr-3 transform group-hover:rotate-12 transition-transform duration-300">
                   <i className="fas fa-paper-plane text-white text-sm"></i>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800" id='contact-id'>
                   Send Message
                 </h2>
               </div>
@@ -262,7 +262,7 @@ const Contact = () => {
       </section>
 
       {/* Compact Map Section */}
-      <section className="relative bg-gray-50 mb-12">
+      <section className="relative bg-gray-50 mb-12 px-4 sm:px-6 lg:px-8">
         <div className="w-full h-64 md:h-80 relative group overflow-hidden ">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177614863953!2d-74.00594938459418!3d40.71278367933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e12bcd1%3A0xfa4d72d84d4f840!2s123%20Safety%20St%2C%20Tech%20City%2C%20TC%2012345!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"

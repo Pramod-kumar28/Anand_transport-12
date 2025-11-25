@@ -674,7 +674,7 @@ const Services = () => {
       )}
 
       {/* Process Section */}
-      <section className="py-6 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-blue-800 mb-4">Our Process</h2>
@@ -701,7 +701,7 @@ const Services = () => {
               {
                 title: 'Support',
                 desc: 'Ongoing maintenance and continuous improvement',
-                emoji: '🛟'
+                emoji: '📱'
               }
             ].map((step, index) => (
               <div key={index} className="text-center group">
