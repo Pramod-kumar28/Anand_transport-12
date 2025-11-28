@@ -132,7 +132,7 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: "fas fa-map-marker-alt", text: "Hiko, 131/A, 2nd Floor, Banjara Hills, Hyderabad" },
+    { icon: "fas fa-map-marker-alt", text: "H.No. 131/A, 2nd Floor, MLA Colony, Beside Vamsiram Banjara Abodes, Road No.12, Lane 14, Banjara Hills, Hyderabad-500034." },
     { icon: "fas fa-phone", text: "+91 1800 123 4857" },
     { icon: "fas fa-envelope", text: "info@anandtechnology.com" },
     { icon: "fas fa-clock", text: "Mon - Fri: 9:00 AM - 6:00 PM" }
