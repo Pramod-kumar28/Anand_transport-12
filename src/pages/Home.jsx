@@ -2384,28 +2384,28 @@ const Home = () => {
   }, []);
 
   // Features from your data - combined from all versions
-  const features = [
-    {
-      title: "Transport Safety Technology",
-      description: "We incorporate modern safety systems into buses and passenger vehicles to significantly reduce accident risks and improve overall travel standards.",
-      emoji: "🛡️"
-    },
-    {
-      title: "Vehicle Fitness Assurance",
-      description: "Before every trip, we perform detailed vehicle assessment to guarantee roadworthiness and safety. We certify the vehicle's condition before every tour.",
-      emoji: "🔧"
-    },
-    {
-      title: "Driver Recognition & Responsibility",
-      description: "We acknowledge that the driver is the primary protector of every passenger. His attention, discipline, and professionalism determine journey safety.",
-      emoji: "👨‍✈️"
-    },
-    {
-      title: "Smart Travel Services",
-      description: "Introducing technology that enhances passenger convenience and travel comfort through digital innovations like our pre-ordered meal system.",
-      emoji: "🍱"
-    }
-  ];
+const features = [
+  {
+    title: "Transport Safety Technology",
+    description: "We incorporate modern safety systems into buses and passenger vehicles to significantly reduce accident risks and improve overall travel standards.",
+    icon: "fas fa-shield-alt"  // Replaced 🛡️
+  },
+  {
+    title: "Vehicle Fitness Assurance",
+    description: "Before every trip, we perform detailed vehicle assessment to guarantee roadworthiness and safety. We certify the vehicle's condition before every tour.",
+    icon: "fas fa-tools"  // Replaced 🔧
+  },
+  {
+    title: "Driver Recognition & Responsibility",
+    description: "We acknowledge that the driver is the primary protector of every passenger. His attention, discipline, and professionalism determine journey safety.",
+    icon: "fas fa-user-tie"  // Replaced 👨‍✈️
+  },
+  {
+    title: "Smart Travel Services",
+    description: "Introducing technology that enhances passenger convenience and travel comfort through digital innovations like our pre-ordered meal system.",
+    icon: "fas fa-concierge-bell"  // Replaced 🍱
+  }
+];
 
 // Consolidated technologies from ALL versions of your data (no duplicates)
 const technologies = [
@@ -2413,28 +2413,24 @@ const technologies = [
     icon: "fas fa-bell",
     title: "Advanced Alert Systems",
     description: "Real-time monitoring for driver fatigue, overspeed, collision risks, and lane deviations.",
-    emoji: "⚠️",
     source: "Version 1"
   },
   {
     icon: "fas fa-satellite-dish",
     title: "Multi-Layered Sensor Systems",
     description: "Installed throughout the vehicle to identify mechanical issues, detect hazards, and provide early-warning alerts.",
-    emoji: "📡",
     source: "Version 2"
   },
   {
     icon: "fas fa-video",
     title: "Surveillance & Monitoring",
     description: "High-definition cameras and live tracking for better oversight and improved passenger security.",
-    emoji: "📹",
     source: "Version 1 & 2"
   },
   {
     icon: "fas fa-brain",
     title: "Predictive Safety Analytics",
     description: "AI-based analytics that identify hazards before they escalate to prevent accidents.",
-    emoji: "🧠",
     source: "Version 1 & 2"
   }
 ];
@@ -2444,14 +2440,12 @@ const additionalTech = [
     icon: "fas fa-ambulance",
     title: "Automated Emergency Response",
     description: "Integrated safety mechanisms that trigger instant alerts during critical conditions.",
-    emoji: "🚨",
     source: "Version 1"
   },
   {
     icon: "fas fa-tachometer-alt",
     title: "Smart Emergency Response",
     description: "Automated triggers that notify emergency contacts and support teams during critical moments.",
-    emoji: "🔄",
     source: "Version 2"
   }
 ];
@@ -2467,29 +2461,26 @@ const additionalTech = [
   ];
 
   // Driver programs from your data
-  const driverPrograms = [
-    {
-      icon: "fas fa-trophy",
-      title: "Recognition Programs",
-      description: "We honor drivers for outstanding service, safe driving, punctuality, and commitment.",
-      emoji: "🏆",
-      color: "from-amber-400 to-orange-500"
-    },
-    {
-      icon: "fas fa-graduation-cap",
-      title: "Skill Development", 
-      description: "Regular training on advanced driving techniques, first-aid response, and safety protocols.",
-      emoji: "🎓",
-      color: "from-blue-400 to-cyan-500"
-    },
-    {
-      icon: "fas fa-chart-line",
-      title: "Performance Monitoring",
-      description: "Real-time evaluation through sensors, telematics data, and behavioral analysis.",
-      emoji: "📊",
-      color: "from-green-400 to-emerald-500"
-    }
-  ];
+const driverPrograms = [
+  {
+    icon: "fas fa-trophy",
+    title: "Recognition Programs",
+    description: "We honor drivers for outstanding service, safe driving, punctuality, and commitment.",
+    color: "from-amber-400 to-orange-500"
+  },
+  {
+    icon: "fas fa-graduation-cap",
+    title: "Skill Development", 
+    description: "Regular training on advanced driving techniques, first-aid response, and safety protocols.",
+    color: "from-blue-400 to-cyan-500"
+  },
+  {
+    icon: "fas fa-chart-line",
+    title: "Performance Monitoring",
+    description: "Real-time evaluation through sensors, telematics data, and behavioral analysis.",
+    color: "from-green-400 to-emerald-500"
+  }
+];
 
   // Meal system features from your data
   const mealSystemFeatures = [
@@ -2608,18 +2599,17 @@ const additionalTech = [
   );
 
   const AnimatedFeatureCard = ({ feature, index }) => (
-    <div 
-      className={`bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-3 group observe ${
-        isVisible ? 'animate-slide-in-up' : 'opacity-0'
-      }`}
+    <div
+      className={`bg-white rounded-2xl shadow-lg border border-gray-100 p-6 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-3 group observe ${isVisible ? 'animate-slide-in-up' : 'opacity-0'
+        }`}
       style={{ animationDelay: `${index * 200}ms` }}
     >
       <div className="relative mb-6">
         <div className="text-2xl w-14 h-14 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
-          {feature.emoji}
+          <i className={`${feature.icon} text-white text-xl`}></i>
         </div>
       </div>
-      
+
       <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
         {feature.title}
       </h3>
@@ -2637,7 +2627,7 @@ const additionalTech = [
       </div>
       <div>
         <h4 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">
-          {tech.title} {tech.emoji}
+          {tech.title}
         </h4>
         <p className="text-gray-600 leading-relaxed">{tech.description}</p>
       </div>
@@ -2679,11 +2669,8 @@ const additionalTech = [
                 <span className="text-sm font-medium text-blue-800">Innovative Systems for Safer Travel and Smarter Mobility</span>
               </div>
 
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                Redefining{' '}
-                <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-                  Travel Safety
-                </span>
+              <h1 className="text-2xl md:text-3xl lg:text-2xl font-bold text-gray-900 leading-tight">
+                Redefining Travel Safety Through Innovation, Monitoring, and Human Excellence
               </h1>
 
               <p className="text-lg text-gray-600 leading-relaxed transform hover:scale-105 transition-transform duration-500">
@@ -2788,7 +2775,7 @@ const additionalTech = [
         {
           title: "Enhanced Travel Experience",
           description: "Driver empowerment and passenger amenities for superior comfort",
-          icon: "fas fa-couch",
+          icon: "fas fa-bus",
           color: "bg-purple-100 text-purple-600",
           border: "border-purple-200"
         }
@@ -2812,6 +2799,98 @@ const additionalTech = [
   </div>
 </section>
 
+
+      {/* Technology Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50 relative">
+        <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="observe">
+              <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
+                Advanced Transport Safety Systems
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                {/* From Version 1 - specifically mentions buses */}
+                We incorporate modern safety systems into buses and passenger vehicles to significantly reduce accident risks and improve overall travel standards.
+              </p>
+
+              <div className="space-y-4">
+                {technologies.map((tech, index) => (
+                  <AnimatedTechItem key={index} tech={tech} index={index} />
+                ))}
+              </div>
+
+              <div className="mt-8 space-y-4">
+                {additionalTech.map((tech, index) => (
+                  <AnimatedTechItem key={index} tech={tech} index={index + technologies.length} />
+                ))}
+              </div>
+            </div>
+
+            <div className="relative observe">
+              <div className="bg-white rounded-3xl shadow-lg p-3 border border-blue-100 transform hover:scale-105 transition-all duration-500">
+                <div className="text-center mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <i className="fas fa-bus text-white text-3xl"></i>
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Comprehensive Vehicle Fitness Protocol</h3>
+                  <p className="text-gray-600">
+                    {/* From Version 2 - adapted for buses */}
+                    Before every bus journey, we perform comprehensive vehicle assessment to guarantee roadworthiness and safety for passenger transportation.
+                  </p>
+                </div>
+
+                <div className="grid gap-4">
+                  {[
+                    "Engine and mechanical systems inspection for bus operations",
+                    "Brake and suspension verification for heavy passenger vehicles",
+                    "Tyre condition and pressure checks (all wheels)",
+                    "Sensor calibration and safety system testing",
+                    "Electrical and lighting system inspection for bus safety",
+                    "Emergency equipment readiness for passenger safety"
+                  ].map((check, index) => (
+                    <div 
+                      key={index}
+                      className="flex items-center p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl hover:from-blue-100 hover:to-cyan-100 transition-all duration-300 transform hover:scale-102 group"
+                    >
+                      <i className="fas fa-check-circle text-green-500 mr-4 text-lg group-hover:scale-125 transition-transform duration-300"></i>
+                      <span className="text-gray-700 font-medium">{check}</span>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 p-4 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-100">
+                  <div className="flex items-center">
+                    <i className="fas fa-certificate text-emerald-600 mr-3 text-xl"></i>
+                    <div>
+                      <p className="font-semibold text-emerald-800">Bus Safety Certification</p>
+                      <p className="text-sm text-emerald-600">
+                        {/* From Version 2 - adapted for buses */}
+                        We certify the bus's condition before every tour, ensuring it meets strict safety benchmarks for passenger transportation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional bus-specific content */}
+                <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl border border-blue-100">
+                  <div className="flex items-start">
+                    <i className="fas fa-users text-blue-600 mr-3 text-xl mt-1"></i>
+                    <div>
+                      <p className="font-semibold text-blue-800">Passenger-Focused Safety</p>
+                      <p className="text-sm text-blue-600">
+                        Our bus safety protocols are designed specifically for high-capacity passenger transportation, ensuring every journey meets the highest safety standards.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -2834,97 +2913,6 @@ const additionalTech = [
         </div>
       </section>
 
-      {/* Technology Section */}
-<section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50 relative">
-  <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent"></div>
-  
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
-      <div className="observe">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
-          Advanced Transport Safety Systems
-        </h2>
-        <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-          {/* From Version 1 - specifically mentions buses */}
-          We incorporate modern safety systems into buses and passenger vehicles to significantly reduce accident risks and improve overall travel standards.
-        </p>
-
-        <div className="space-y-4">
-          {technologies.map((tech, index) => (
-            <AnimatedTechItem key={index} tech={tech} index={index} />
-          ))}
-        </div>
-
-        <div className="mt-8 space-y-4">
-          {additionalTech.map((tech, index) => (
-            <AnimatedTechItem key={index} tech={tech} index={index + technologies.length} />
-          ))}
-        </div>
-      </div>
-
-      <div className="relative observe">
-        <div className="bg-white rounded-3xl shadow-lg p-3 border border-blue-100 transform hover:scale-105 transition-all duration-500">
-          <div className="text-center mb-6">
-            <div className="w-20 h-20 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-              <i className="fas fa-bus text-white text-3xl"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">Bus Safety & Fitness Check</h3>
-            <p className="text-gray-600">
-              {/* From Version 2 - adapted for buses */}
-              Before every bus journey, we perform comprehensive vehicle assessment to guarantee roadworthiness and safety for passenger transportation.
-            </p>
-          </div>
-
-          <div className="grid gap-4">
-            {[
-              "Engine and mechanical systems inspection for bus operations",
-              "Brake and suspension verification for heavy passenger vehicles",
-              "Tyre condition and pressure checks (all wheels)",
-              "Sensor calibration and safety system testing",
-              "Electrical and lighting system inspection for bus safety",
-              "Emergency equipment readiness for passenger safety"
-            ].map((check, index) => (
-              <div 
-                key={index}
-                className="flex items-center p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl hover:from-blue-100 hover:to-cyan-100 transition-all duration-300 transform hover:scale-102 group"
-              >
-                <i className="fas fa-check-circle text-green-500 mr-4 text-lg group-hover:scale-125 transition-transform duration-300"></i>
-                <span className="text-gray-700 font-medium">{check}</span>
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-6 p-4 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-100">
-            <div className="flex items-center">
-              <i className="fas fa-certificate text-emerald-600 mr-3 text-xl"></i>
-              <div>
-                <p className="font-semibold text-emerald-800">Bus Safety Certification</p>
-                <p className="text-sm text-emerald-600">
-                  {/* From Version 2 - adapted for buses */}
-                  We certify the bus's condition before every tour, ensuring it meets strict safety benchmarks for passenger transportation.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional bus-specific content */}
-          <div className="mt-4 p-4 bg-gradient-to-r from-blue-50 to-sky-50 rounded-xl border border-blue-100">
-            <div className="flex items-start">
-              <i className="fas fa-users text-blue-600 mr-3 text-xl mt-1"></i>
-              <div>
-                <p className="font-semibold text-blue-800">Passenger-Focused Safety</p>
-                <p className="text-sm text-blue-600">
-                  Our bus safety protocols are designed specifically for high-capacity passenger transportation, ensuring every journey meets the highest safety standards.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
       {/* Driver Excellence */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -2944,13 +2932,13 @@ const additionalTech = [
 
           <div className="grid md:grid-cols-3 gap-8">
             {driverPrograms.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="text-center p-6 bg-white rounded-3xl shadow-lg border border-gray-100 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-3 group observe"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <div className="text-4xl mb-4 w-20 h-20 mx-auto flex items-center justify-center group-hover:scale-125 transition-all duration-500">
-                  {item.emoji}
+                <div className={`text-2xl w-14 h-14 mb-4 mx-auto flex items-center justify-center group-hover:scale-125 transition-all duration-500 rounded-full bg-gradient-to-r ${item.color}  `}>
+                  <i className={`text-white ${item.icon} text-2xl`}></i>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
                   {item.title}

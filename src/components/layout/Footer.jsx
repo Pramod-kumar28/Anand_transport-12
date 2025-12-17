@@ -292,6 +292,11 @@ const Footer = () => {
                     Protecting lives with cutting-edge security systems and intelligent monitoring.
                   </p>
 
+                  {/* Copyright */}
+                  <p className="text-gray-200 text-sm">
+                    "Redefining Travel Safety Through Innovation, Monitoring, and Human Excellence"
+                  </p>
+
                   {/* Social Links */}
                   <div className="flex space-x-3">
                     {socialLinks.map((social, index) => (

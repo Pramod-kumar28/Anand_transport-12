@@ -317,79 +317,94 @@ const About = () => {
   }, []);
 
   // Founder Profile Component with enhanced animations
-  const FounderProfile = () => (
-    <section className="max-w-6xl mx-auto pt-12 py-2">
-      <div className="bg-white rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-2 p-2 items-start">
-        {/* Left: Image card with quote below */}
-        <div className="space-y-6">
-          <div className="relative overflow-hidden slide-in-left">
-            <div className='flex item-end w-full justify-center'>
-              <img
-                src="./images/CEO.png"
-                alt="Founder"
-                className="w-70 h-[600px] object-cover object-top center transform hover:scale-105 transition-transform duration-700"
-                style={{ borderRadius: 12 }}
-              />
-            </div>
-
-            {/* Small floating badge with animation */}
-            <div className="absolute bottom-4 right-4 lg:bottom-5 lg:right-20 sm:bottom-10 sm:right-20 scale-in">
-              <div className="bg-white px-4 py-3 rounded-lg shadow-lg font-semibold text-gray-700 border border-gray-100 transform hover:scale-105 transition-transform duration-300">
-                <div className="uppercase text-lg tracking-wide text-center text-amber-500 font-bold">ANAND</div>
-                <div className="text-xs text-gray-500 text-center">Founder & Chairman</div>
-              </div>
-            </div>
+const FounderProfile = () => (
+  <section className="max-w-6xl mx-auto pt-12 py-2">
+    <div className="bg-white rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-2 p-2 items-start">
+      {/* Left: Image card with quote below */}
+      <div className="space-y-6">
+        <div className="relative overflow-hidden slide-in-left">
+          <div className='flex item-end w-full justify-center'>
+            <img
+              src="./images/CEO.png"
+              alt="Founder"
+              className="w-70 h-[600px] object-cover object-top center transform hover:scale-105 transition-transform duration-700"
+              style={{ borderRadius: 12 }}
+            />
           </div>
 
-          {/* Quote below image */}
-          <blockquote className="border-l-4 border-amber-500 pl-4 italic text-gray-700 bg-amber-50 rounded-lg p-4 text-base slide-in-left">
-            "We don't just build safety systems; we build trust. Every journey protected is a life secured, every innovation implemented is a step towards safer mobility for all."
-          </blockquote>
+          {/* Small floating badge with animation */}
+          <div className="absolute bottom-4 right-4 lg:bottom-5 lg:right-20 sm:bottom-10 sm:right-20 scale-in">
+            <div className="bg-white px-4 py-3 rounded-lg shadow-lg font-semibold text-gray-700 border border-gray-100 transform hover:scale-105 transition-transform duration-300">
+              <div className="uppercase text-lg tracking-wide text-center text-amber-500 font-bold">ANAND</div>
+              <div className="text-xs text-gray-500 text-center">Founder & Chairman</div>
+            </div>
+          </div>
         </div>
 
-        {/* Right: Content */}
-        <div className="pt-6 slide-in-right">
-          <h2 className="text-3xl font-bold text-slate-800 mb-2">Anand</h2>
-          <p className="text-sm text-blue-700 font-medium">Founder & Chairman</p>
+        {/* Quote below image - Using a powerful quote */}
+        <blockquote className="border-l-4 border-amber-500 pl-4 italic text-gray-700 bg-amber-50 rounded-lg p-4 text-base slide-in-left">
+          "Redefining Travel Safety Through Innovation, Monitoring, and Human Excellence."
+        </blockquote>
+      </div>
 
-          {/* Description */}
-          <div className="mb-6 space-y-4 mt-6">
-            <p className="text-gray-700 leading-relaxed text-base fade-in">
-              Under the visionary leadership of our Founder, Mr. Anand, Anand Technology & Safety was established on the foundational principle of 
-              <span className='font-bold text-amber-500'> "Dharmo Rakshati Rakshitah"</span> that one who upholds righteousness is protected by it.
-            </p>
-            <p className="text-gray-700 leading-relaxed text-base fade-in">
-              This ancient wisdom forms the bedrock of our company's ethos, guiding our mission to develop transportation safety solutions that don't just meet standards, but set new benchmarks for protection and reliability.
-            </p>
-            <p className="text-gray-700 leading-relaxed text-base fade-in">
-              With a background in engineering and a passion for innovation, Mr. Anand envisioned a future where technology and human values converge to create safer travel experiences for everyone.
-            </p>
-          </div>
+      {/* Right: Content */}
+      <div className="pt-6 slide-in-right">
+        <h2 className="text-3xl font-bold text-slate-800 mb-2">Anand</h2>
+        <p className="text-sm text-blue-700 font-medium">Founder & Chairman</p>
 
-          {/* Core Values */}
-          <div className="mt-8 fade-in">
-            <h3 className="text-xl font-bold text-slate-800 mb-4">Our Core Values</h3>
-            <div className="space-y-3">
-              {[
-                { icon: 'fas fa-shield-alt', text: 'Safety as a Fundamental Right' },
-                { icon: 'fas fa-handshake', text: 'Ethical Innovation' },
-                { icon: 'fas fa-users', text: 'Human-Centered Technology' }
-              ].map((value, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center text-gray-700 p-3 rounded-lg hover:bg-amber-50 transition-all duration-300 transform hover:translate-x-2"
-                >
-                  <i className={`${value.icon} text-amber-500 mr-3 text-lg`}></i>
+        {/* Attractive Description */}
+        <div className="mb-6 space-y-4 mt-6">
+          <p className="text-gray-700 leading-relaxed text-base fade-in">
+            <span className="font-bold text-blue-600">Visionary Leader</span> behind Anand Technology & Safety, pioneering the transformation of transportation through <span className="font-bold">intelligent safety solutions</span> and robust monitoring systems that make every journey safer, smarter, and more reliable.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed text-base fade-in">
+            Under his leadership, we've developed <span className="font-bold">advanced safety-driven technologies</span> that don't just meet standards—they set new benchmarks for protection. Our systems reduce accident risks while enhancing passenger comfort and confidence on every trip.
+          </p>
+          
+          <p className="text-gray-700 leading-relaxed text-base fade-in">
+            From <span className="font-bold">predictive analytics</span> that prevent accidents before they occur, to <span className="font-bold">driver recognition programs</span> that honor excellence, Anand's approach blends cutting-edge innovation with deep respect for the human element in transportation safety.
+          </p>
+        </div>
+
+        {/* Core Values */}
+        <div className="mt-8 fade-in">
+          <h3 className="text-xl font-bold text-slate-800 mb-4">Leadership Philosophy</h3>
+          <div className="space-y-3">
+            {[
+              { 
+                icon: 'fas fa-rocket', 
+                text: 'Innovation with Purpose',
+                description: 'Every technological advancement serves one goal: to protect lives and enhance travel experiences through intelligent, meaningful innovation.'
+              },
+              { 
+                icon: 'fas fa-users', 
+                text: 'Human-Centered Design',
+                description: 'We place people at the center of every solution—recognizing that drivers are the primary protectors and passengers deserve the safest journeys.'
+              },
+              { 
+                icon: 'fas fa-shield-alt', 
+                text: 'Safety as Standard',
+                description: 'Creating travel environments where safety is not optional—it is built into every system, process, and journey from the ground up.'
+              }
+            ].map((value, index) => (
+              <div 
+                key={index}
+                className="flex items-start text-gray-700 p-3 rounded-lg hover:bg-amber-50 transition-all duration-300 transform hover:translate-x-2"
+              >
+                <i className={`${value.icon} text-amber-500 mr-3 text-lg`}></i>
+                <div>
                   <span className="font-medium">{value.text}</span>
+                  {/* <p className="text-sm text-gray-600 mt-1">{value.description}</p> */}
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </section>
-  );
-
+    </div>
+  </section>
+);
   // Stats Section Component with enhanced animations
   const StatsSection = () => (
     <section className="py-6 text-black w-full bg-gradient-to-br from-blue-50 to-amber-50">
@@ -412,23 +427,23 @@ const About = () => {
     </section>
   )
 
-  const ideologyPillars = [
-    {
-      icon: 'fas fa-dharmachakra',
-      title: 'Dharma-Driven Approach',
-      description: 'Our actions are guided by moral responsibility and ethical principles. We believe that true safety comes from doing what is right, not just what is required.',
-    },
-    {
-      icon: 'fas fa-lightbulb',
-      title: 'Innovation with Purpose',
-      description: 'Every technological advancement we pursue serves a clear purpose: to protect lives and enhance travel experiences through intelligent, meaningful innovation.',
-    },
-    {
-      icon: 'fas fa-heart',
-      title: 'Human-Centered Design',
-      description: 'We place people at the center of every solution, ensuring our technology serves human needs and enhances the travel experience for all.',
-    }
-  ]
+const ideologyPillars = [
+  {
+    icon: 'fas fa-shield-alt',
+    title: 'Safer Journeys',
+    description: 'Through advanced technology and intelligent safety systems, we ensure every trip is protected by predictive analytics and real-time monitoring.',
+  },
+  {
+    icon: 'fas fa-clipboard-check',
+    title: 'Reliable Operations',
+    description: 'Through strict vehicle fitness checks, proactive maintenance, and comprehensive safety inspections for consistent performance.',
+  },
+  {
+    icon: 'fas fa-user-graduate',
+    title: 'Better Experiences',
+    description: 'Through professionally trained drivers, ongoing education programs, and customer-focused service excellence.',
+  }
+]
 
   return (
     <div className="overflow-hidden pt-20">
@@ -464,10 +479,13 @@ const About = () => {
       <section className="py-6 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4 fade-in">Our Guiding Ideology</h2>
-            <div className="w-20 h-1 bg-amber-500 mx-auto mb-8 scale-in"></div>
-            <p className="text-gray-600 max-w-3xl mx-auto text-lg md:text-xl leading-relaxed fade-in">
-              Our approach to transportation safety is rooted in timeless principles that guide every innovation and decision we make.
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4 fade-in">Our Commitment</h2>
+            <p className="text-gray-600 max-w-5xl mx-auto text-md md:text-lg leading-relaxed fade-in">
+              Anand Technology & Safety is committed to transforming the transportation sector
+              through intelligent safety solutions, robust vehicle monitoring systems, and a strong
+              emphasis on human-driven responsibility. We focus on elevating safety standards,
+              enhancing passenger confidence, and ensuring a smarter, more reliable travel
+              experience.
             </p>
           </div>
 
@@ -478,31 +496,13 @@ const About = () => {
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl text-center fade-in group hover:-translate-y-2 transition-all duration-500"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <div className="bg-gradient-to-r from-amber-400 to-amber-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-r from-blue-500 to-blue-600 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   <i className={`${pillar.icon} text-white text-2xl`}></i>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-amber-600 transition-colors duration-300">{pillar.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{pillar.description}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Mission Statement with enhanced animation */}
-      <section className="py-6 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-8 fade-in">Our Commitment</h2>
-            <div className="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-amber-500 transform hover:scale-105 transition-transform duration-300">
-              <p className="text-lg text-gray-700 leading-relaxed mb-6 fade-in">
-                "At Anand Technology & Safety, we are committed to transforming transportation through intelligent safety solutions that honor our foundational principle of Dharma. 
-                We believe that protecting lives through technology is not just our business, but our moral responsibility."
-              </p>
-              <div className="text-amber-500 font-semibold fade-in animation-delay-500">
-                Anand, Founder & Chairman
-              </div>
-            </div>
           </div>
         </div>
       </section>
