@@ -356,7 +356,7 @@ const About = () => {
           <div className="mb-6 space-y-4 mt-6">
             <p className="text-gray-700 leading-relaxed text-base fade-in">
               Under the visionary leadership of our Founder, Mr. Anand, Anand Technology & Safety was established on the foundational principle of 
-              <span className='font-bold text-amber-500'> "Dharmo Rakshati Rakshitah"</span> — that one who upholds righteousness is protected by it.
+              <span className='font-bold text-amber-500'> "Dharmo Rakshati Rakshitah"</span> that one who upholds righteousness is protected by it.
             </p>
             <p className="text-gray-700 leading-relaxed text-base fade-in">
               This ancient wisdom forms the bedrock of our company's ethos, guiding our mission to develop transportation safety solutions that don't just meet standards, but set new benchmarks for protection and reliability.
@@ -500,7 +500,7 @@ const About = () => {
                 We believe that protecting lives through technology is not just our business, but our moral responsibility."
               </p>
               <div className="text-amber-500 font-semibold fade-in animation-delay-500">
-                — Anand, Founder & Chairman
+                Anand, Founder & Chairman
               </div>
             </div>
           </div>
