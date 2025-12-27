@@ -254,7 +254,7 @@ const Footer = () => {
               <div className="text-left">
                 <div className="flex flex-col items-start space-y-4">
                   {/* Branding Section */}
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-1">
                       <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-md flex-shrink-0">
                         <img
