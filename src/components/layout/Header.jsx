@@ -188,7 +188,7 @@ const Header = () => {
           {/* Logo Section - Fixed width */}
           <div className="flex items-center max-w-[75%] flex-shrink">
             {/* Founder Logo */}
-            <div className="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden mr-2 md:mr-3 border-2 border-amber-200 shadow-lg flex-shrink-0">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-orange-200 overflow-hidden mr-2 md:mr-3 border-2 border-amber-200 shadow-lg flex-shrink-0">
               <img 
                 src="./images/CEO.png" 
                 alt="Anand Technology CEO" 
@@ -197,7 +197,7 @@ const Header = () => {
             </div>
             
             {/* Company Logo */}
-            <div className="h-10 w-10 md:h-10 md:w-10 overflow-hidden mr-2 md:mr-3 flex-shrink-0">
+            <div className="w-10 h-10 md:w-14 md:h-14 object-contain overflow-hidden mr-2 md:mr-3 flex-shrink-0">
               <img 
                 src="./images/logo.png" 
                 alt="Anand Technology Logo" 
