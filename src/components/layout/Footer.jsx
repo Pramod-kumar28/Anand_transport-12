@@ -132,9 +132,9 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: "fas fa-map-marker-alt", text: "Hiko, 131/A, 2nd Floor, Banjara Hills, Hyderabad" },
+    { icon: "fas fa-map-marker-alt", text: "H.No. 131/A, 2nd Floor, MLA Colony, Beside Vamsiram Banjara Abodes, Road No.12, Lane 14, Banjara Hills, Hyderabad-500034." },
     { icon: "fas fa-phone", text: "+91 1800 123 4857" },
-    { icon: "fas fa-envelope", text: "info@anandtechnology.com" },
+    { icon: "fas fa-envelope", text: "info@anandgroup.org" },
     { icon: "fas fa-clock", text: "Mon - Fri: 9:00 AM - 6:00 PM" }
   ];
 
@@ -245,7 +245,7 @@ const Footer = () => {
   return (
     <>
       {/* Main Footer */}
-      <footer className="bg-blue-900 text-white">
+      <footer className=" bg-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="py-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
@@ -254,20 +254,13 @@ const Footer = () => {
               <div className="text-left">
                 <div className="flex flex-col items-start space-y-4">
                   {/* Branding Section */}
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-1">
-                      <div className="w-14 h-14 rounded-full border-2 border-amber-200 overflow-hidden shadow-lg flex-shrink-0">
-                        <img
-                          src="./images/CEO.png"
-                          alt="Anand Technology & Safety"
-                          className="w-full h-full object-cover object-top"
-                        />
-                      </div>
-                      <div className="w-12 h-12 flex-shrink-0">
+                      <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-md flex-shrink-0">
                         <img
                           src="./images/logo.png"
                           alt="Anand Technology & Safety"
-                          className="w-full h-full object-contain"
+                          className="w-[70%] h-[70%] object-contain"
                         />
                       </div>
                     </div>
@@ -278,11 +271,11 @@ const Footer = () => {
                         <span className="text-white"> TECHNOLOGY & SAFETY</span>
                       </h2>
                       {/* Mobile View */}
-                      <h2 className="lg:hidden text-sm font-bold leading-tight -pl-2 ">
+                      <h2 className="lg:hidden text-[11px] font-bold leading-tight -pl-2 ">
                         <span className="text-amber-400">ANAND</span> 
-                        <span className="text-white"> TECH & SAFETY</span>
+                        <span className="text-white"> TECHNOLOGY & SAFETY</span>
                       </h2>
-                      <p className="text-amber-200 text-sm italic mt-1">"Dharmo Rakshati Rakshitah"</p>
+                      <p className="text-amber-200 text-xs italic mt-1">"Dharmo Rakshati Rakshitah"</p>
                     </div>
                   </div>
 
@@ -290,6 +283,11 @@ const Footer = () => {
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Leading the revolution in transportation safety through innovative technology solutions. 
                     Protecting lives with cutting-edge security systems and intelligent monitoring.
+                  </p>
+
+                  {/* Copyright */}
+                  <p className="text-gray-200 text-sm">
+                    "Redefining Travel Safety Through Innovation, Monitoring, and Human Excellence"
                   </p>
 
                   {/* Social Links */}

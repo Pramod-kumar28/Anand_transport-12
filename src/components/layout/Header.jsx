@@ -182,13 +182,13 @@ const Header = () => {
   const isActive = (path) => location.pathname === path
 
   return (
-    <header className={`container fixed w-full z-50 transition-all duration-300 bg-white ${isScrolled ? 'shadow-md' : ''}`}>
-      <div className="w-full py-3">
+    <header className={`fixed w-full z-50 transition-all duration-300 bg-white ${isScrolled ? 'shadow-md' : ''}`}>
+      <div className="w-full py-4 container mx-auto">
         <div className="flex justify-between items-center w-full">
           {/* Logo Section - Fixed width */}
           <div className="flex items-center max-w-[75%] flex-shrink">
             {/* Founder Logo */}
-            <div className="h-12 w-12 md:h-14 md:w-14 rounded-full overflow-hidden mr-2 md:mr-3 border-2 border-amber-200 shadow-lg flex-shrink-0">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-orange-200 overflow-hidden mr-2 md:mr-3 border-2 border-amber-200 shadow-lg flex-shrink-0">
               <img 
                 src="./images/CEO.png" 
                 alt="Anand Technology CEO" 
@@ -197,7 +197,7 @@ const Header = () => {
             </div>
             
             {/* Company Logo */}
-            <div className="h-10 w-10 md:h-10 md:w-10 overflow-hidden mr-2 md:mr-3 flex-shrink-0">
+            <div className="w-10 h-10 md:w-14 md:h-14 object-contain overflow-hidden mr-2 md:mr-3 flex-shrink-0">
               <img 
                 src="./images/logo.png" 
                 alt="Anand Technology Logo" 
@@ -284,7 +284,7 @@ const Header = () => {
             <Link 
               to="/" 
               className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 ${
-                isActive('/contact') 
+                isActive('/') 
                   ? 'text-blue-800 bg-blue-500 bg-opacity-10' 
                   : 'text-gray-700 hover:text-blue-500 hover:bg-gray-100'
               }`}
@@ -295,7 +295,7 @@ const Header = () => {
             <Link 
               to="/about" 
               className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 ${
-                isActive('/contact') 
+                isActive('/about') 
                   ? 'text-blue-800 bg-blue-500 bg-opacity-10' 
                   : 'text-gray-700 hover:text-blue-500 hover:bg-gray-100'
               }`}
@@ -306,7 +306,7 @@ const Header = () => {
             <Link 
               to="/services" 
               className={`font-medium px-3 py-2 rounded-lg transition-all duration-300 ${
-                isActive('/contact') 
+                isActive('/services') 
                   ? 'text-blue-800 bg-blue-500 bg-opacity-10' 
                   : 'text-gray-700 hover:text-blue-500 hover:bg-gray-100'
               }`}
